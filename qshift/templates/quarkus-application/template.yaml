@@ -11,7 +11,7 @@ metadata:
     - java
     - maven
 spec:
-  owner: guests
+  owner: group:default/maximilianopizarro
   type: service
 
   parameters:
@@ -179,7 +179,7 @@ spec:
               description: Your SCM organization/group
               default: ch007m
               enum:
-                - ch007m
+                - maximilianoPizarro
                 - iocanel
                 - aureamunoz
                 - tqvarnst
@@ -193,7 +193,7 @@ spec:
           title: Namespace
           type: string
           description: The openshift/kubernetes namespace for deploying resources
-          default: qshift
+          default: maximilianopizarro-dev
 
         imageRepository:
            title: Select a registry
@@ -265,7 +265,7 @@ spec:
         url: skeletons/catalog-info/
         values:
           component_id: ${{ parameters.component_id }}
-          clusterDomainName: apps.qshift.snowdrop.dev #TODO: Find a way to configure it
+          clusterDomainName: apps.rm2.thpm.p1.openshiftapps.com #TODO: Find a way to configure it
           orgName: ${{ parameters.repo.org }}
           repoName: ${{ parameters.repo.name }}
           owner: ${{ parameters.owner }}
