@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: qshift-templates
+  annotations:
+    github.com/project-slug: maximilianoPizarro/qshift-templates
+spec:
+  type: other
+  lifecycle: unknown
+  owner: maximilianopizarro
